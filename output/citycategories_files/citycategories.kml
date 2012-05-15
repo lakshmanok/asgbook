@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>citycategories</name>
+    <GroundOverlay>
+      <Icon>
+        <href>citycategories.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>14.166666666724396</south>
+        <east>136.66666666691998</east>
+        <west>70.00000000019999</west>
+        <north>47.5000000000844</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

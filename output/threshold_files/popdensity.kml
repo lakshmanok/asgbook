@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>popdensity</name>
+    <GroundOverlay>
+      <Icon>
+        <href>popdensity.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>7.0</south>
+        <east>-10.999999999864798</east>
+        <west>-180.0</west>
+        <north>85.0000000000624</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>pxv_2</name>
+    <GroundOverlay>
+      <Icon>
+        <href>pxv_2.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>44.87999960780144</south>
+        <east>20.240000784397125</east>
+        <west>-10.0</west>
+        <north>60.0</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

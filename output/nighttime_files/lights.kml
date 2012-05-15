@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>lights</name>
+    <GroundOverlay>
+      <Icon>
+        <href>lights.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>-58.0</south>
+        <east>180.00000000028797</east>
+        <west>-180.0</west>
+        <north>85.0000000001144</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

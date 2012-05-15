@@ -1,0 +1,52 @@
+<project basedir="." default="build" name="examples">
+
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="project.classpath">
+		<pathelement location="build" />
+		<path refid="compile.classpath" />
+	</path>
+
+	<target name="clean" description="Removes all artifacts from build directory">
+		<delete dir="build" />
+	</target>
+
+	<target name="init">
+		<tstamp />
+		<mkdir dir="build" />
+	</target>
+
+	<target name="copyconfig" depends="init" description="Copies configuration files to CLASSPATH">
+		<echo message="copying config files ... " />
+		<copy todir="build">
+			<fileset dir="config" includes="*" />
+		</copy>
+	</target>
+
+	<target name="build" depends="copyconfig" description="Compiles Java code to build directory">
+		<javac destdir="build" debug="true">
+			<src path="src" />
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<target name="createhandout" description="Removes homework problems and creates a distribution">
+		<property name="output.dir" value="/tmp/autospatialgrids/handout" />
+		<delete dir="${output.dir}" />
+		<mkdir dir="${output.dir}" />
+		<copy todir="${output.dir}/examples" verbose="false">
+			<fileset dir="../examples">
+				<exclude name="**/*CVS*" />
+				<exclude name="**/build/**/*" />
+				<exclude name="**/output/**/*" />
+				<!-- exclude homework solutions -->
+				<exclude name="**/NHighest.java"/>
+				<exclude name="**/WeightedAverageOptimized.java"/>
+			</fileset>
+		</copy>
+	</target>
+	
+</project>

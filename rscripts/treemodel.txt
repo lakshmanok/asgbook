@@ -1,0 +1,71 @@
+
+R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> data <- read.table("../output/gdipattern_files/gdipatterns.txt");
+> colnames(data)[1] <- "pop";
+> colnames(data)[2] <- "light";
+> colnames(data)[3] <- "gdi";
+> #attach(data)
+> 
+> summary(data)
+      pop             light             gdi        
+ Min.   : 11.30   Min.   :  0.00   Min.   :-0.300  
+ 1st Qu.: 25.00   1st Qu.: 32.79   1st Qu.: 0.760  
+ Median : 49.08   Median : 57.57   Median : 1.670  
+ Mean   : 66.18   Mean   : 58.82   Mean   : 1.633  
+ 3rd Qu.: 83.54   3rd Qu.: 91.53   3rd Qu.: 2.000  
+ Max.   :394.96   Max.   :100.00   Max.   : 4.000  
+> 
+> library(rpart);
+> 
+> data$gdi = round(data$gdi)
+> model <- rpart(gdi ~ pop + light, method="class", data=data)
+> printcp(model)
+
+Classification tree:
+rpart(formula = gdi ~ pop + light, data = data, method = "class")
+
+Variables actually used in tree construction:
+[1] light pop  
+
+Root node error: 82/117 = 0.70085
+
+n= 117 
+
+        CP nsplit rel error  xerror     xstd
+1 0.231707      0   1.00000 1.08537 0.056282
+2 0.060976      1   0.76829 0.84146 0.064884
+3 0.048780      2   0.70732 0.90244 0.063598
+4 0.036585      3   0.65854 0.90244 0.063598
+5 0.010000      5   0.58537 0.81707 0.065255
+> 
+> png("treemodel1_cv.png");
+> plotcp(model)
+> 
+> post(model, file="treemodel1.ps", title="Full tree");
+> text(model, use.n=TRUE, all=TRUE, cex=0.8);
+> 
+> # prune the tree
+> model <- prune(model, cp=0.04);
+> post(model, file="treemodel2.ps", title="Pruned tree");
+> text(model, use.n=TRUE, all=TRUE, cex=0.8);
+> 
+> 

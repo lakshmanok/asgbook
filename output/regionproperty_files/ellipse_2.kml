@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>ellipse_2</name>
+    <GroundOverlay>
+      <Icon>
+        <href>ellipse_2.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>39.16666666669241</south>
+        <east>-84.16666666659</east>
+        <west>-92.49999999993001</west>
+        <north>43.333333333362404</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

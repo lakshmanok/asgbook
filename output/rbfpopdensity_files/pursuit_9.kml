@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>pursuit_9</name>
+    <GroundOverlay>
+      <Icon>
+        <href>pursuit_9.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>12.000000000004</south>
+        <east>-52.041666666564296</east>
+        <west>-130.0416666666267</west>
+        <north>60.0000000000424</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

@@ -1,0 +1,17 @@
+base referer
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_convolution_filter.html 324,5 593,35
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_dilation_filter.html 339,59 579,88
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_erosion_filter.html 339,112 579,141
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_inverter.html 351,165 567,195
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_lo_g_edge_filter.html 332,219 585,248
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_matched_filter.html 333,272 584,301
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_median_filter.html 337,325 580,355
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_multi_filter.html 347,379 571,408
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_oriented_ellipse_filter.html 312,432 605,461
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_saturate_filter.html 335,485 583,515
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_separable_convolution_filter.html 291,539 627,568
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_simple_thresholder.html 316,592 601,621
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_sobel_edge_filter.html 327,645 591,675
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_speckle_filter.html 335,699 583,728
+rect $classedu_1_1ou_1_1asgbook_1_1transforms_1_1_f_f_t_bandpass_filter.html 303,752 615,781
+rect $classedu_1_1ou_1_1asgbook_1_1transforms_1_1_f_f_t_convolution_filter.html 296,805 621,835

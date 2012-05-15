@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>sfcalbedo</name>
+    <GroundOverlay>
+      <Icon>
+        <href>sfcalbedo.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>22.492273012441775</south>
+        <east>-64.45757499803462</east>
+        <west>-120.54242500196538</west>
+        <north>51.9039050030296</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

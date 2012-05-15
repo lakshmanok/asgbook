@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>spgauss</name>
+    <GroundOverlay>
+      <Icon>
+        <href>spgauss.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>21.500000000011603</south>
+        <east>-52.99999999989841</east>
+        <west>-138.3333333333</west>
+        <north>64.1666666667124</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

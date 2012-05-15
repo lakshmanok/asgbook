@@ -1,0 +1,81 @@
+
+R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> data <- read.table("../output/citycategories_files/citydata.txt", header=TRUE);
+> summary(data)
+      Pop             light       
+ Min.   : 10.22   Min.   :  0.00  
+ 1st Qu.: 16.00   1st Qu.: 10.55  
+ Median : 22.39   Median : 23.02  
+ Mean   : 31.74   Mean   : 28.52  
+ 3rd Qu.: 35.71   3rd Qu.: 40.17  
+ Max.   :390.00   Max.   :100.00  
+> 
+> means <- colMeans(data);
+> sd  <- apply(data, 2, sd);
+> 
+> data <- scale(data); # normalize
+> summary(data);
+      Pop                 light           
+ Min.   :-6.626e-01   Min.   :-1.237e+00  
+ 1st Qu.:-4.846e-01   1st Qu.:-7.794e-01  
+ Median :-2.880e-01   Median :-2.383e-01  
+ Mean   :-2.545e-17   Mean   :-6.635e-17  
+ 3rd Qu.: 1.222e-01   3rd Qu.: 5.054e-01  
+ Max.   : 1.103e+01   Max.   : 3.101e+00  
+> 
+> model <- kmeans(data, 3); # 3 clusters
+> print(model$centers)
+         Pop      light
+1  3.9694681  1.7754953
+2  0.1810235  1.1313375
+3 -0.2890539 -0.5752012
+> print(means)
+     Pop    light 
+31.74154 28.51892 
+> print(sd)
+     Pop    light 
+32.48508 23.05287 
+> 
+> # unscale the values
+> centers <- model$centers
+> for (i in 1:length(means)){
++    centers[,i] = centers[,i] * sd[i] + means[i]
++ }
+> print(centers)
+       Pop    light
+1 160.6900 69.44918
+2  37.6221 54.59949
+3  22.3516 15.25888
+> 
+> # plot cluster result
+> png("cluster1.png");
+> library(cluster);
+> clusplot(data, model$cluster, color=TRUE, shade=TRUE, lines=0);
+> 
+> 
+> # find the best value of K
+> icv <- (nrow(data)-1)*sum(apply(data,2,var)) # for K=1
+> for (K in 2:15){
++   icv[K] <- sum(kmeans(data, centers=K)$withinss)
++ }
+> png("cluster2.png")
+> plot(1:15, icv, type="b", xlab="Number of Clusters", ylab="Intra-cluster variance")
+> 

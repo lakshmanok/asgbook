@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Document>
+    <Placemark>
+      <name> 10</name>
+      <Point>
+        <coordinates>4.354166666814141,43.83901515159662,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name> 9</name>
+      <Point>
+        <coordinates>-5.87499999986071,43.35000000008108,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name> 7</name>
+      <Point>
+        <coordinates>-2.6944444443026088,42.854166666747346,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name> 9</name>
+      <Point>
+        <coordinates>1.22222222236719,41.13194444452375,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name> 9</name>
+      <Point>
+        <coordinates>-4.4374999998595595,36.73660714293293,0.</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

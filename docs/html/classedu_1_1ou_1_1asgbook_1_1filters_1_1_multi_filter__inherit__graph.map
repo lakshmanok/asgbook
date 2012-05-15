@@ -1,0 +1,4 @@
+base referer
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_dilate_erode_filter.html 5,160 275,189
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_erode_dilate_filter.html 299,160 568,189
+rect $interfaceedu_1_1ou_1_1asgbook_1_1filters_1_1_spatial_filter.html 169,5 404,35

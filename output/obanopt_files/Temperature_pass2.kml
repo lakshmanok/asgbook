@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>Temperature_pass2</name>
+    <GroundOverlay>
+      <Icon>
+        <href>Temperature_pass2.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>35.02</south>
+        <east>-82.39</east>
+        <west>-90.01</west>
+        <north>36.63</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

@@ -1,0 +1,18 @@
+This dataset is included within this software package with the kind permission of CIESIN and Columbia University:
+
+Center for International Earth Science Information Network (CIESIN), Columbia University;
+and Centro Internacional de Agricultura Tropical (CIAT). 2005. 
+Gridded Population of the World Version 3 (GPWv3): Population Density Grids. Palisades, NY: 
+Socioeconomic Data and Applications Center (SEDAC), CIESIN, Columbia University. 
+Available at http://sedac.ciesin.columbia.edu/gpw.
+
+Permission to include this data along with the source code of this package was
+obtained April 25, 2011 from Dr. Robert R. Downs, Senior Digital Archivist and Senior Staff Associate Officer of Research,
+Center for International Earth Science Information Network (CIESIN), The Earth Institute, Columbia University.
+
+You are not allowed to redistribute this data without permission from CIESIN. Please see their data policy for
+any further restrictions.
+
+V Lakshmanan
+University of Oklahoma
+April 2011

@@ -1,0 +1,5 @@
+base referer
+rect $interfaceedu_1_1ou_1_1asgbook_1_1motion_1_1_motion_estimator.html 5,197 280,227
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_sobel_edge_filter.html 304,197 568,227
+rect $interfaceedu_1_1ou_1_1asgbook_1_1filters_1_1_spatial_filter.html 283,5 517,35
+rect $classedu_1_1ou_1_1asgbook_1_1filters_1_1_convolution_filter.html 387,85 656,115

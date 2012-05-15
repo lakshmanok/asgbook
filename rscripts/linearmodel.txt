@@ -1,0 +1,86 @@
+
+R version 2.7.1 RC (2008-06-20 r45965)
+Copyright (C) 2008 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> data <- read.table("../output/gdipattern_files/gdipatterns.txt");
+> summary(data)
+       V1               V2               V3        
+ Min.   : 11.30   Min.   :  0.00   Min.   :-0.300  
+ 1st Qu.: 25.00   1st Qu.: 32.79   1st Qu.: 0.760  
+ Median : 49.08   Median : 57.57   Median : 1.670  
+ Mean   : 66.18   Mean   : 58.82   Mean   : 1.633  
+ 3rd Qu.: 83.54   3rd Qu.: 91.53   3rd Qu.: 2.000  
+ Max.   :394.96   Max.   :100.00   Max.   : 4.000  
+> 
+> cor(x=data$V1,y=data$V3,method="pearson")
+[1] 0.02105818
+> cor(x=log(data$V1),y=data$V3,method="pearson")
+[1] 0.06466634
+> cor(x=data$V2,y=data$V3,method="pearson")
+[1] 0.7357593
+> 
+> cor(x=data$V1,y=data$V3,method="kendall")
+[1] 0.04399145
+> cor(x=data$V2,y=data$V3,method="kendall")
+[1] 0.5726488
+> 
+> model <- glm( data$V3 ~ data$V2 + data$V1 );
+> summary(model)
+
+Call:
+glm(formula = data$V3 ~ data$V2 + data$V1)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.76883  -0.52149  -0.05302   0.70358   1.59259  
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.003494   0.159105   0.022    0.983    
+data$V2      0.034444   0.002532  13.605  < 2e-16 ***
+data$V1     -0.005992   0.001243  -4.821 4.45e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+(Dispersion parameter for gaussian family taken to be 0.6624462)
+
+    Null deviance: 198.218  on 116  degrees of freedom
+Residual deviance:  75.519  on 114  degrees of freedom
+AIC: 288.81
+
+Number of Fisher Scoring iterations: 2
+
+> png(filename="linearmodelfit.png");
+> layout(matrix(c(1,2,3,4),2,2)); plot(model)
+> 
+> library("boot")
+> cverr <- suppressWarnings(cv.glm(data, model, K=5)); # 3 fold cross-validation
+> cverr$delta
+       1        1 
+2.675657 2.675657 
+> 
+> #est = round( 0.003494 + 0.034444 * data$V2 - 0.005992 * data$V1 )
+> #summary( (est-data$V3) )
+> 
+> #frac = data$V2/data$V1
+> #cor(x=frac,y=data$V3,method="pearson")
+> #model <- lm( data$V3 ~ frac + data$V1 );
+> #summary(model)
+> #est = round( 0.361739 + 0.649456 * (data$V2/data$V1) - 0.005510 * data$V1 )
+> #summary( (est-data$V3) )
+> 

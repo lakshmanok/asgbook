@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>edges</name>
+    <GroundOverlay>
+      <Icon>
+        <href>edges.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>15.0</south>
+        <east>-5.0</east>
+        <west>-10.0</west>
+        <north>20.0</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

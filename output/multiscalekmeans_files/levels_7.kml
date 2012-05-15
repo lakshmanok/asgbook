@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>levels_7</name>
+    <GroundOverlay>
+      <Icon>
+        <href>levels_7.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>28.34318511737847</south>
+        <east>-103.35605625714493</east>
+        <west>-114.81363542035857</west>
+        <north>47.97711835542108</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

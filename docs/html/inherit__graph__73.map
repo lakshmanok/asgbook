@@ -1,0 +1,6 @@
+base referer
+rect $interfaceedu_1_1ou_1_1asgbook_1_1segmentation_1_1_segmenter.html 5,85 296,115
+rect $classedu_1_1ou_1_1asgbook_1_1segmentation_1_1_enhanced_watershed_segmenter.html 345,5 769,35
+rect $classedu_1_1ou_1_1asgbook_1_1segmentation_1_1_hysteresis_segmenter.html 379,59 736,88
+rect $classedu_1_1ou_1_1asgbook_1_1segmentation_1_1_threshold_segmenter.html 380,112 735,141
+rect $classedu_1_1ou_1_1asgbook_1_1segmentation_1_1_watershed_segmenter.html 377,165 737,195

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>kmlwriter</name>
+    <GroundOverlay>
+      <Icon>
+        <href>kmlwriter.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>25.0</south>
+        <east>-77.0</east>
+        <west>-97.0</west>
+        <north>35.0</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

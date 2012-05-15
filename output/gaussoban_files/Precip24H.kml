@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>Precip24H</name>
+    <GroundOverlay>
+      <Icon>
+        <href>Precip24H.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>34.900000000000006</south>
+        <east>-81.51</east>
+        <west>-89.95</west>
+        <north>38.160000000000004</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>

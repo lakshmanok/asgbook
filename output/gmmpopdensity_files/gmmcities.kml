@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Document>
+    <Placemark>
+      <name>GMM#0 ampl=0.02548134257960069 sigmax=17.57410166687699 sigmay=12.553962922796817</name>
+      <Point>
+        <coordinates>-73.87963749901131,40.85881802254735,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#1 ampl=0.04198269456100046 sigmax=15.021104592024697 sigmay=13.142018989426175</name>
+      <Point>
+        <coordinates>-70.74392320635896,42.59005848969127,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#2 ampl=0.02396445143020842 sigmax=10.203615512983093 sigmay=11.655396117467358</name>
+      <Point>
+        <coordinates>-75.01370685116973,39.750752501799404,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#3 ampl=0.0795250016882668 sigmax=15.910278120075604 sigmay=15.910273320158467</name>
+      <Point>
+        <coordinates>-73.60416660619055,45.52083320964488,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#4 ampl=0.03188202264811446 sigmax=13.415122459170439 sigmay=12.995110140737678</name>
+      <Point>
+        <coordinates>-71.23131174687887,41.390373925950016,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#5 ampl=0.029359573776325153 sigmax=15.960040648951573 sigmay=13.136220901390129</name>
+      <Point>
+        <coordinates>-73.06714860670519,41.03975071768472,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#6 ampl=0.02228962174990345 sigmax=14.098486688571684 sigmay=7.723000484849576</name>
+      <Point>
+        <coordinates>-75.35083259200391,40.98289476054217,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#7 ampl=0.030559440945935296 sigmax=15.44254384208763 sigmay=12.351051012617562</name>
+      <Point>
+        <coordinates>-72.8363020351992,41.97526770332259,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#8 ampl=0.025204673164289534 sigmax=17.16276506540185 sigmay=11.764940563515614</name>
+      <Point>
+        <coordinates>-74.23887236561525,40.58318201383614,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMM#9 ampl=0.026701177456354922 sigmax=14.643065080255518 sigmay=11.928239293979168</name>
+      <Point>
+        <coordinates>-71.97715297687908,42.65563075656024,0.</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

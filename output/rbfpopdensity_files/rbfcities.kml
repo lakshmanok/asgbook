@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Document>
+    <Placemark>
+      <name>RBF#0 ampl=683 sigmax=26.0 sigmay=26.0</name>
+      <Point>
+        <coordinates>-99.06249999993526,19.479166666676647,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RBF#1 ampl=672 sigmax=8.0 sigmay=8.0</name>
+      <Point>
+        <coordinates>-72.35416666658054,18.52083333334255,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RBF#3 ampl=641 sigmax=6.0 sigmay=6.0</name>
+      <Point>
+        <coordinates>-73.89583333324845,40.85416666669375,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RBF#7 ampl=663 sigmax=6.0 sigmay=6.0</name>
+      <Point>
+        <coordinates>-118.27083333328395,34.06250000002165,0.</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RBF#8 ampl=629 sigmax=8.0 sigmay=8.0</name>
+      <Point>
+        <coordinates>-89.22916666659404,13.72916666667205,0.</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

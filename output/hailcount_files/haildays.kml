@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml>
+  <Folder>
+    <name>haildays</name>
+    <GroundOverlay>
+      <Icon>
+        <href>haildays.png</href>
+      </Icon>
+      <LatLonBox>
+        <south>-2.6700013365292534</south>
+        <east>-56.92999999999999</east>
+        <west>-127.0</west>
+        <north>50.99999866347075</north>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>
