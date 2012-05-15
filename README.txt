@@ -1,5 +1,5 @@
 (1) Unzip and place the software somewhere. Let's say you have it in 
-INSTALL_DIR/autospatialgrids/asgbook
+INSTALL_DIR/autospatialgrids/lakshmanok-asgbook-xyz
 
 (2) Do a web search and install the following software on your computer:
   (2.1) Java 1.6.0_18 or higher
@@ -9,7 +9,7 @@ INSTALL_DIR/autospatialgrids/asgbook
 From Eclipse:
   (1) Launch Eclipse.  Set its workspace to be $INSTALL_DIR/autospatialgrids
   (2) In Eclipse, File | New | Project | Java Project from Ant build file
-        Browse to and select $INSTALL_DIR/autospatialgrids/asgbook/build.xml
+        Browse to and select $INSTALL_DIR/autospatialgrids/lakshmanok-asgbook-xyz/build.xml
   (3) Now you can right-click on any file with a "main" method and run it
       as a Java application
 
